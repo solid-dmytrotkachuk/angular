@@ -3,6 +3,7 @@ stages:
   - group:
     - analyze: --fatal-infos
     dart: dev
-  - group:
-    - analyze
-    dart: 2.12.0
+#  - group:
+#    - analyze
+#    dart: 2.12.0
+#
