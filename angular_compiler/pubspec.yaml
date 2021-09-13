@@ -25,6 +25,10 @@ dev_dependencies:
   # This is here in order for it to be resolvable by the analyzer.
   # It is overrode in `dependency_overrides`.
   angular:
+    git:
+      url: https://github.com/solid-dmytrotkachuk/angular
+      path: angular
+      ref: update_pubspec
   build_runner: ^2.0.0
   build_test: ^2.0.0
   mockito: ^5.0.7
