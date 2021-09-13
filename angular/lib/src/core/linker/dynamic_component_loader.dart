@@ -11,7 +11,6 @@ import 'view_container_ref.dart' show ViewContainerRef;
 /// It will soon be required to instead use `ComponentLoader`, which is a nearly
 /// identical _synchronous_ API that is much more optimized and will be
 /// supported long-term. See `doc/component_loading.md` for more information.
-@Deprecated('Use ComponentLoader with an imported ComponentFactory instead.')
 class SlowComponentLoader {
   final ComponentLoader _loader;
 
