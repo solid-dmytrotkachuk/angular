@@ -7,14 +7,22 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  angular: ^6.0.0
+  angular:
+    git:
+      url: https://github.com/solid-dmytrotkachuk/angular
+      path: angular
+      ref: update_pubspec
   collection: ^1.15.0
   js: ^0.6.3
   meta: ^1.3.0
 
 dev_dependencies:
   async: ^2.5.0
-  angular_test: ^3.0.0
+  angular_test:
+    git:
+      url: https://github.com/solid-dmytrotkachuk/angular
+      path: angular_test
+      ref: update_pubspec
   build_runner: ^2.0.0
   build_test: ^2.0.0
   build_web_compilers: ^3.0.0
@@ -23,13 +31,13 @@ dev_dependencies:
   test: ^1.16.0
 
 # === vvv REMOVE WHEN PUBLISHING vvv ===
-dependency_overrides:
-  angular:
-    path: ../angular
-  angular_ast:
-    path: ../angular_ast
-  angular_compiler:
-    path: ../angular_compiler
-  angular_test:
-    path: ../angular_test
+#dependency_overrides:
+#  angular:
+#    path: ../angular
+#  angular_ast:
+#    path: ../angular_ast
+#  angular_compiler:
+#    path: ../angular_compiler
+#  angular_test:
+#    path: ../angular_test
 # === ^^^ REMOVE WHEN PUBLISHING ^^^ ===
