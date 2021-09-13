@@ -23,11 +23,11 @@ dev_dependencies:
   test: ^1.16.0
 
 # === vvv REMOVE WHEN PUBLISHING vvv ===
-dependency_overrides:
-  angular:
-    path: ../angular
-  angular_ast:
-    path: ../angular_ast
-  angular_compiler:
-    path: ../angular_compiler
+#dependency_overrides:
+#  angular:
+#    path: ../angular
+#  angular_ast:
+#    path: ../angular_ast
+#  angular_compiler:
+#    path: ../angular_compiler
 # === ^^^ REMOVE WHEN PUBLISHING ^^^ ===
