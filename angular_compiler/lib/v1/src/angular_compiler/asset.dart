@@ -19,7 +19,7 @@ abstract class NgAssetReader {
     final normalizedBase = _normalize(baseUrl);
     final normalizedUrl = _normalize(url);
     final asset =
-        AssetId.resolve(normalizedUrl.toString(), from: AssetId.resolve(normalizedBase.toString()));
+        AssetId.resolve(normalizedUrl, from: AssetId.resolve(normalizedBase));
     return asset.uri.toString();
   }
 
@@ -39,13 +39,13 @@ class _BuildStepAssetReader extends NgAssetReader {
 
   @override
   Future<bool> canRead(String url) {
-    final asset = AssetId.resolve(url);
+    final asset = AssetId.resolve(Uri.parse(url));
     return _buildStep.canRead(asset);
   }
 
   @override
   Future<String> readText(String url) async {
-    final asset = AssetId.resolve(url);
+    final asset = AssetId.resolve(Uri.parse(url));
     return _buildStep.readAsString(asset);
   }
 }

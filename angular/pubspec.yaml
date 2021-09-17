@@ -33,13 +33,13 @@ dependencies:
       ref: update_pubspec
   ##########################################################################
 
-  build: ^1.6.3
+  build: ^2.0.0
   build_config: '>=0.2.6 <2.0.0' # Runtime dependency with no import
-  code_builder: ^3.7.0
+  code_builder: ^4.0.0
   csslib: ^0.17.0
   path: ^1.8.0
   pedantic: ^1.10.0
-  source_gen: ^0.9.10+3
+  source_gen: ^1.0.0
   source_span: ^1.8.0
 
 # === vvv REMOVE WHEN PUBLISHING vvv ===
