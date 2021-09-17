@@ -166,7 +166,7 @@ class InjectorEmitter implements InjectorVisitor {
         ..type = TypeReference((b) => b
           ..symbol = type.symbol
           ..url = type.url
-          ..types.addAll(types)
+          ..types.addAll(types as Iterable<Reference>)
           ..isNullable = true)),
     );
 
@@ -226,7 +226,7 @@ class InjectorEmitter implements InjectorVisitor {
       ..type = TypeReference((b) => b
         ..symbol = returnType.symbol
         ..url = returnType.url
-        ..types.addAll(types)
+        ..types.addAll(types as Iterable<Reference>)
         ..isNullable = true)));
 
     final methodName = '_get${returnType.symbol}\$$index';
