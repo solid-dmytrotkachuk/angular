@@ -11,7 +11,7 @@ dependencies:
     git:
       url: https://github.com/solid-dmytrotkachuk/angular
       path: angular
-      ref: update_pubspec_v2
+      ref: update_pubspec
   meta: ^1.3.0
 
 dev_dependencies:
@@ -19,7 +19,7 @@ dev_dependencies:
     git:
       url: https://github.com/solid-dmytrotkachuk/angular
       path: angular_test
-      ref: update_pubspec_v2
+      ref: update_pubspec
   build_runner: ^1.11.2
   build_test: ^1.3.7
   build_web_compilers: 2.16.5

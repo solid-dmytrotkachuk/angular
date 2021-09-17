@@ -25,12 +25,12 @@ dependencies:
     git:
       url: https://github.com/solid-dmytrotkachuk/angular
       path: angular_ast
-      ref: update_pubspec_v2
+      ref: update_pubspec
   angular_compiler:
     git:
       url: https://github.com/solid-dmytrotkachuk/angular
       path: angular_compiler
-      ref: update_pubspec_v2
+      ref: update_pubspec
   ##########################################################################
 
   build: ^1.6.3
