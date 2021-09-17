@@ -31,6 +31,7 @@ export 'src/devtools.dart' show enableDevTools, registerContentRoot;
 export 'src/di/errors.dart' show InjectionError, NoProviderError;
 export 'src/di/injector.dart' show Injector, InjectorFactory;
 export 'src/di/injector/runtime.dart' show ReflectiveInjector;
+export 'src/security/dom_sanitization_service.dart';
 export 'src/meta.dart'
     show
         AfterChanges,
